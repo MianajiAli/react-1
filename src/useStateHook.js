@@ -1,13 +1,10 @@
 import { useState } from "react";
 export const UseStateHook = () => {
-  let [showText, setShowText] = useState(true);
-  const Togglebutton = () =>{
-    setShowText(!showText)
-  };
+  const[textcolor,setTextColor] = useState("red")
   return (
     <div>
-      <button onClick={Togglebutton}>show / hide</button>
-      {showText &&<h1 >text example</h1>}
+      <button onClick={()=>{setTextColor(textcolor==="red" ?"green" :"red")}}>change color</button>
+      <h1 style={{color:textcolor}}>text example</h1>
     </div>
   );
 };
