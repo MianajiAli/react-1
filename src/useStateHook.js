@@ -1,16 +1,14 @@
 import { useState } from "react";
 export const UseStateHook = () => {
-  let [age, setAge] = useState(0);
-  const incraeaseAge = () => {
-    age++;
-    setAge(age);
-    console.log(age);
-  };
+  let [inputvalue , setInputValue] = useState("")
+  const handelInputChange = (event) =>{
+    console.log(event.target.value)
+    setInputValue(event.target.value)
+  }
   return (
     <div>
-      <h1>{age}</h1>
-      <button onClick={()=> setAge(age+1)}>add</button>
-      <button onClick={()=> setAge(age-1)}>kam</button>
+      <input type="text" onChange={handelInputChange}/>
+      <h1>{inputvalue}</h1> 
     </div>
   );
 };
