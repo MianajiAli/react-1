@@ -1,13 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
-  const name = 'aria';
+  const job = (
+    <div>
+      <h1>fds</h1>
+      <h2>das</h2>
+      <h2>ad</h2>
+    </div>
+  );
   return (
-<div>
-  hello world {name}
-</div>
+    <div>
+      {job}
+      <Shogl salery={2} />
+    </div>
   );
 }
-
+const Shogl = (props) => {
+  return(
+    <div> {props.salery}</div>
+  )
+};
 export default App;
