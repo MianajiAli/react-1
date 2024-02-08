@@ -1,11 +1,11 @@
-import {ConditionalRendering} from "./conditionalRendering";
+import {UseStateHook} from "./useStateHook";
 
 import "./App.css";
 
 function App() {
   return(
     <div>
-    <ConditionalRendering />
+    <UseStateHook/>
 
   </div>
   )
