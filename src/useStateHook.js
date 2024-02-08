@@ -1,14 +1,13 @@
 import { useState } from "react";
 export const UseStateHook = () => {
-  let [inputvalue , setInputValue] = useState("")
-  const handelInputChange = (event) =>{
-    console.log(event.target.value)
-    setInputValue(event.target.value)
-  }
+  let [showText, setShowText] = useState(true);
+  const Togglebutton = () =>{
+    setShowText(!showText)
+  };
   return (
     <div>
-      <input type="text" onChange={handelInputChange}/>
-      <h1>{inputvalue}</h1> 
+      <button onClick={Togglebutton}>show / hide</button>
+      {showText &&<h1 >text example</h1>}
     </div>
   );
 };
