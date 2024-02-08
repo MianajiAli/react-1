@@ -4,6 +4,10 @@ import "./App.css";
 
 function App() {
   return(
-  <ConditionalRendering />)
+    <div>
+    <ConditionalRendering />
+
+  </div>
+  )
 };
 export default App;

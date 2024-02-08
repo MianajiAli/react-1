@@ -4,3 +4,9 @@ body{
 *{
   color:#d1d1d1;
 }
+.success{
+  background-color: #50ec02;
+}
+.warning {
+  background-color: red;
+}
