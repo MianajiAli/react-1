@@ -9,7 +9,8 @@ export const UseStateHook = () => {
   return (
     <div>
       <h1>{age}</h1>
-      <button onClick={incraeaseAge}>add</button>
+      <button onClick={()=> setAge(age+1)}>add</button>
+      <button onClick={()=> setAge(age-1)}>kam</button>
     </div>
   );
 };
