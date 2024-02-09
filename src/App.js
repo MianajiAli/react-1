@@ -1,11 +1,11 @@
-import {UseStateHook} from "./useStateHooktamrin";
+import {Tamrini} from "./tamrin";
 
 import "./App.css";
 
 function App() {
   return(
     <div>
-    <UseStateHook/>
+    <Tamrini/>
 
   </div>
   )
